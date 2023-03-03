@@ -1,0 +1,31 @@
+.header{
+  height: 50px;
+  background-color: darkseagreen;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.linck{
+  color: black;
+  text-decoration: none;
+
+  &:visited{
+    color: black;
+  }
+  &:hover{
+    color: orange;
+  }
+}
+
+.frame{
+  height: 90vh;
+  background-color: ghostwhite;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
