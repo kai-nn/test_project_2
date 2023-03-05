@@ -18,9 +18,9 @@ const Fibonacci = () => {
     return (
         <div>
             <b>fibonacci:</b><br />
-            {fibonacci && fibonacci.map(el => <span>{el}, </span>)}
+            {fibonacci && fibonacci.map((el, i) => <span key={`f_${i}`}>{el}, </span>)}
             <hr />
-            <b>fibonacciHonest:</b><br /> {fibonacciHonest && fibonacciHonest.map(el => <span>{el}, </span>)}
+            <b>fibonacciHonest:</b><br /> {fibonacciHonest && fibonacciHonest.map((el, i) => <span key={`fh_${i}`}>{el}, </span>)}
             <hr />
             <b>Summa:</b> {fibonacciHonest && fibonacciHonest.reduce((accum, value) => accum + value, 0)}
         </div>
